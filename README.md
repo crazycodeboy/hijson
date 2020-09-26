@@ -70,7 +70,7 @@ Use like so:
 ```
 
 ```java
-String city = new HiJson(testJson).get("lives").get(0).value("city");
+String city = new HiJson(jsonString).get("lives").get(0).value("city");
 System.out.println(city);
 ```
 
