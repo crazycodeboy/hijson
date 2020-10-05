@@ -38,14 +38,14 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'hijson'
-        licenses = ['Apache-2.0']
-        vcsUrl = "github.com/crazycodeboy/hijson"
-        issueTrackerUrl = "github.com/crazycodeboy/hijson/issue"
+        licenses = ['MIT Licensed']
+        vcsUrl = "https://github.com/crazycodeboy/hijson.git"
+        issueTrackerUrl = "https://github.com/crazycodeboy/hijson/issue"
         version {
-            name = '0.0.1'
-            desc = "hijson 0.0.1 final"
+            name = '0.0.3'
+            desc = "hijson 0.0.3 final"
             released = new Date()
-            vcsTag = '0.0.1'
+            vcsTag = '0.0.3'
         }
     }
     publications = ['MyPublication']
@@ -58,7 +58,7 @@ publishing {
             artifact(javadocJar)
             groupId "org.devio.hi.json"
             artifactId 'hijson'
-            version '0.0.1'
+            version '0.0.3'
         }
     }
 }
