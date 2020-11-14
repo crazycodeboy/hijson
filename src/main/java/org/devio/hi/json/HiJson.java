@@ -23,6 +23,10 @@ public class HiJson {
         this.target = jsonObject;
     }
 
+    public HiJson(JSONArray jsonArray) {
+        this.target = jsonArray;
+    }
+
     public <T> T value() {
         try {
             return (T) target;
@@ -46,7 +50,12 @@ public class HiJson {
     public HiJson get(String name) {
         try {
             if (target instanceof JSONObject) {
-                target = ((JSONObject) target).get(name);
+                Object o = ((JSONObject) target).get(name);
+                if (o instanceof JSONObject) {
+                    return new HiJson((JSONObject) o);
+                } else if (o instanceof JSONArray) {
+                    return new HiJson((JSONArray) o);
+                }
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -57,7 +66,12 @@ public class HiJson {
     public HiJson get(int index) {
         try {
             if (target instanceof JSONArray) {
-                target = ((JSONArray) target).get(index);
+                Object o = ((JSONArray) target).get(index);
+                if (o instanceof JSONObject) {
+                    return new HiJson((JSONObject) o);
+                } else if (o instanceof JSONArray) {
+                    return new HiJson((JSONArray) o);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -67,6 +81,7 @@ public class HiJson {
 
     /**
      * 获取JSONArray数组长度
+     *
      * @return
      */
     public int count() {
