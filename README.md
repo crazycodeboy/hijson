@@ -1,7 +1,7 @@
 # hijson
 
 [ ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/crazycodeboy/hijson/pulls)
-[ ![hijson release](https://img.shields.io/github/release/crazycodeboy/hijson.svg?maxAge=2592000?style=flat-square)](https://github.com/crazycodeboy/GitHubPopular/releases)
+[ ![hijson release](https://img.shields.io/github/release/crazycodeboy/hijson.svg?maxAge=2592000?style=flat-square)](https://github.com/crazycodeboy/hijson/releases)
 [![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/crazycodeboy/react-native-check-box/master/LICENSE)
 
 HiJson is a lightweight JSON parsing library that can be used for HarmonyOS, Android, and Java
