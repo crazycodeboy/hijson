@@ -36,7 +36,6 @@ implementation 'org.devio.hi.json:hijson:0.0.3'
   <groupId>org.devio.hi.json</groupId>
   <artifactId>hijson</artifactId>
   <version>0.0.3</version>
-  <type>pom</type>
 </dependency>
 ```
 
