@@ -26,7 +26,7 @@ HiJson is a lightweight JSON parsing library that can be used for HarmonyOS, And
 >Gradle
 
 ```
-implementation 'org.devio.hi.json:hijson:0.0.3'
+implementation 'org.devio.hi.json:hijson:0.0.5'
 ```
 
 >Maven
@@ -35,7 +35,7 @@ implementation 'org.devio.hi.json:hijson:0.0.3'
 <dependency>
   <groupId>org.devio.hi.json</groupId>
   <artifactId>hijson</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.5</version>
   <type>pom</type>
 </dependency>
 ```

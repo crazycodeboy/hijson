@@ -64,4 +64,19 @@ public class HiJson {
         }
         return this;
     }
+
+    /**
+     * 获取JSONArray数组长度
+     * @return
+     */
+    public int count() {
+        try {
+            if (target instanceof JSONArray) {
+                return ((JSONArray) target).length();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }
